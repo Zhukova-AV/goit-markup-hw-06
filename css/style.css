@@ -433,15 +433,17 @@ p {
     height: 15px;
     margin-left: -25px;
     cursor: pointer;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
     align-items: center;
-    background-image: url('../images/icon-vector.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check__input:checked + .check-icon {
-    background-image: url('../images/icon-check.svg');
+    background-color: var(--accent-color);
+    border: none;
+    background-size: cover;
 }
 
 .text-agree {
