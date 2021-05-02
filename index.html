@@ -64,18 +64,58 @@
                     <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
                 </div>
                 <button type="button" class="btn btn-primary" data-modal-open>Заказать услугу</button>
-                    <div class="backdrop is-hidden" data-modal>
-                        <div class="modal">
-                            <button type="button" class="btn-close" data-modal-close>
-                                <svg width="30" height="30">
-                                    <use href="./images/sprite.svg#icon-close"></use>
-                                </svg>    
-                            </button>
-                        </div>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button type="button" class="btn-close-wrapper" data-modal-close>                            
+                            <svg class="btn-close" width="15" height="15">
+                                <use href="./images/sprite.svg#icon-close-black"></use>
+                            </svg>                        
+                        </button>                        
+                        <form class="form">
+                            <h4 class="form-title">Оставьте свои данные, мы вам перезвоним</h4>                            
+                            <label class="form-label">
+                                Имя
+                                <span class="input-wrapper">
+                                    <input class="form-input" type="text" name="name" />                                    
+                                    <svg class="form-icon" width="18" height="18">
+                                        <use href="./images/sprite.svg#icon-person-black"></use>
+                                    </svg>
+                                </span>                                    
+                            </label>                                                          
+                            <label class="form-label">
+                                Телефон
+                                <span class="input-wrapper">
+                                    <input class="form-input" type="tel" name="tel" />
+                                
+                                    <svg class="form-icon" width="18" height="18">
+                                        <use href="./images/sprite.svg#icon-phone-black"></use>
+                                    </svg>
+                                </span> 
+                            </label>                          
+                            <label class="form-label">
+                                Почта
+                                <span class="input-wrapper">
+                                    <input class="form-input" type="email" name="email" />
+                                    <svg class="form-icon" width="18" height="18">
+                                        <use href="./images/sprite.svg#icon-email-black"></use>
+                                    </svg>
+                                </span>
+                            </label>                                                    
+                            <label class="form-label">
+                                Комментарий                                
+                                <textarea class="form-input form-textarea" name="comments" placeholder="Введите текст"></textarea>
+                            </label>
+                            <label class="form-label check__label">
+                                <input type="checkbox" name="subscription-agree" class="check__input" required/>
+                                <span class="check-icon"></span>
+                                Соглашаюсь с рассылкой и принимаю
+                                <a class="text-agree" href="#">Условия договора</a>
+                            </label>           
+                            <button class="btn btn-primary btn-send" type="submit">Отправить</button>                                                                               
+                        </form>
                     </div>
-            
-            </div>
-            
+                </div>
+            </div>                
         </section>
         <!-- /HERO -->
 
@@ -414,7 +454,24 @@
                             </svg>
                         </a>
                     </li>
-                </ul>
+                </ul>             
+            
+            </div>
+            <div class="sign-form">
+                <p class="social-title">Подпишитесь на рассылку</p>
+                <form >
+                    <label>
+                        <input class="sign-input" type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="btn btn-primary">Подписаться
+                        <svg class="sign-icon" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+
+                
+                </form>
+            
             
             </div>
             
